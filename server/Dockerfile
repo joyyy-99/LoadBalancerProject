@@ -1,6 +1,12 @@
 FROM python:3.9-slim
 WORKDIR /app
+
+RUN apt-get update && apt-get install -y curl
+
 COPY server.py .
-RUN pip install flask
-ENV SERVER_ID=0
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+
 CMD ["python", "server.py"]

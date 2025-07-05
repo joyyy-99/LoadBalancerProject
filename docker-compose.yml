@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  loadbalancer:
+    build: .
+    container_name: loadbalancer
+    ports:
+      - "5000:5000"
+    networks:
+      - net1
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # 👈 gives access to host Docker engine
+
+networks:
+  net1:
+    name: load_balancer_project_net1
