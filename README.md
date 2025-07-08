@@ -61,7 +61,7 @@ load\_balancer\_project/
  1. Clone the Repository
 
 bash
-git clone https://github.com/your-username/LoadBalancerProject.git
+git clone https://github.com/joyyy-99/LoadBalancerProject
 cd LoadBalancerProject
 `
 
