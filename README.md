@@ -17,7 +17,7 @@ The project is structured around a custom consistent hash ring implementation, D
 
 load\_balancer\_project/
 │
-├── analysis/               # Scripts and result graphs for A1–A3 analysis
+├── analysis/               #Scripts and result graphs for A1–A3 analysis
 │   ├── analyze\_a1.py
 │   ├── analyze\_a2.py
 │   ├── analyze\_a3.py
@@ -25,12 +25,12 @@ load\_balancer\_project/
 │   ├── a2\_scalability.png
 │   └── a3\_fault\_tolerance.png
 │
-├── server/                 # Dockerized simple Flask server replica
+├── server/                 Dockerized simple Flask server replica
 │   ├── server.py
 │   ├── Dockerfile
 │   └── requirements.txt
 │
-├── src/                    # Load balancer and consistent hash logic
+├── src/                    Load balancer and consistent hash logic
 │   ├── load\_balancer.py
 │   ├── hashring.py
 │   └── *init*.py
